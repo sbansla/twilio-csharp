@@ -40,7 +40,6 @@ jobs:
          
   deploy:
     name: Deploy
-    if: success() && github.ref_type == 'tag'
     needs: [ test, import-certificate ]
     runs-on: ubuntu-latest
     steps:

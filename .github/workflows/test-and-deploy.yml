@@ -59,7 +59,7 @@ jobs:
       - name: List files in a directory
         run: |
           # Replace 'your/directory/path' with the actual directory path you want to list
-          directory_path="src/Twilio/bin/Release"
+          directory_path="src/Twilio/"
           
           # List files in the specified directory
           ls "$directory_path"

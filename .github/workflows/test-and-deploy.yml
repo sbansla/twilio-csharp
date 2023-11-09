@@ -29,6 +29,10 @@ jobs:
       - name: Remove faulty SDK version
         run: sudo rm -rf /usr/share/dotnet/sdk/7.0.4*
 
+      - name: Publish package to NuGet
+        run: |
+          make release
+          
       - name: Build & Test
         run: make test
           
